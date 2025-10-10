@@ -1,13 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-         <meta charser="UTF-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>我的第一个网站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .bilibili-link {
+            display: inline-block;
+            background-color: #fb7299;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251, 114, 153, 0.4);
+        }
+        
+        .bilibili-link:hover {
+            background-color: #ff8ab5;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(251, 114, 153, 0.6);
+        }
+        
+        .code-explanation {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+        }
+        
+        .code-explanation h2 {
+            margin-top: 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-         <h3>欢迎来到我的网站<h3>
-         <a href="https://space.bilibili.com/3546879876926027?spm_id_from=333.337.0.0">我的B站主页</a>
+    <div class="container">
+        <h1>欢迎来到我的网站</h1>
+        <a href="https://space.bilibili.com/3546879876926027?spm_id_from=333.337.0.0" class="bilibili-link">
+            访问我的B站主页
+        </a>
+    </div>
+    
+    <div class="code-explanation">
+        <h2>HTML/CSS代码解析</h2>
+        <p><strong>文字居中方法：</strong></p>
+        <ul>
+            <li>使用 <code>text-align: center;</code> 使文本水平居中</li>
+            <li>使用Flexbox布局(<code>display: flex;</code> + <code>justify-content: center;</code> + <code>align-items: center;</code>)实现完美垂直和水平居中</li>
+            <li>使用 <code>min-height: 100vh;</code> 确保容器占据整个视口高度</li>
+        </ul>
+        
+        <p><strong>其他改进：</strong></p>
+        <ul>
+            <li>添加了渐变背景和毛玻璃效果提升视觉体验</li>
+            <li>美化了链接按钮样式和悬停效果</li>
+            <li>使用响应式设计确保在不同设备上正常显示</li>
+            <li>修正了meta标签中的拼写错误(charser→charset)</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>我的第一个网站 | 使用HTML和CSS创建</p>
+    </footer>
 </body>
 </html>
