@@ -40,7 +40,37 @@
 
     <a id="unban-mail" href="#">点击反馈</a>
     <script>
-        const to = "3613421237@qq.com\n3605908576@qq.com\n3196685427@qq.com\n1450739288@qq.com"
+        const to = "3613421237@qq.com"
+        const subject = "反馈"
+        const body = "游戏ID（必填）：\nQQ号（必填）：\n问题（可选但建议填写）：\n建议（可选）：\n其他（可选）："
+        document.getElementById("unban-mail").href =
+            "mailto:" + to + "?subject=" + encodeURIComponent(subject) + 
+            "&body=" + encodeURIComponent(body);
+    </script>
+
+    <a id="unban-mail" href="#">点击反馈(备用1)</a>
+    <script>
+        const to = "3605908576@qq.com"
+        const subject = "反馈"
+        const body = "游戏ID（必填）：\nQQ号（必填）：\n问题（可选但建议填写）：\n建议（可选）：\n其他（可选）："
+        document.getElementById("unban-mail").href =
+            "mailto:" + to + "?subject=" + encodeURIComponent(subject) + 
+            "&body=" + encodeURIComponent(body);
+    </script>
+
+    <a id="unban-mail" href="#">点击反馈(备用2)</a>
+    <script>
+        const to = "3196685427@qq.com"
+        const subject = "反馈"
+        const body = "游戏ID（必填）：\nQQ号（必填）：\n问题（可选但建议填写）：\n建议（可选）：\n其他（可选）："
+        document.getElementById("unban-mail").href =
+            "mailto:" + to + "?subject=" + encodeURIComponent(subject) + 
+            "&body=" + encodeURIComponent(body);
+    </script>
+
+    <a id="unban-mail" href="#">点击反馈(备用3)</a>
+    <script>
+        const to = "1450739288@qq.com"
         const subject = "反馈"
         const body = "游戏ID（必填）：\nQQ号（必填）：\n问题（可选但建议填写）：\n建议（可选）：\n其他（可选）："
         document.getElementById("unban-mail").href =
